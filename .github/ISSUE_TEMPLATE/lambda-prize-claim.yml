@@ -9,9 +9,14 @@ body:
       value: |
         If you have been awarded a Lambda Prize, please complete this form with your data first:
 
-        **https://TBD.typeform.com/to/TBD**
+        **https://34z6hn3eyj7.typeform.com/to/xtlTNs82**
 
-        After submitting, open this issue and paste your **Typeform response ID** in the field below. We use it to match your answers to this ticket. If everything checks out, we will proceed with payment.
+        In the form, you will be provided with a **Typeform response ID**. Please save/copy it.
+
+        After submitting the form, open this issue (via this template) and complete the fields below. We use your **Typeform response ID** to match your Typeform answers to this ticket. Your **Ethereum wallet address** will appear on this **public** issue; if privacy is a concern, use a **single-use** address.
+
+        > [!IMPORTANT]
+        > The prize amount will be paid in **USDT on Ethereum** to the **Ethereum wallet address** you enter below.
 
   - type: input
     id: typeform_response_id
@@ -19,5 +24,14 @@ body:
       label: Typeform response ID
       description: The response ID of your Typeform submission (copy it exactly).
       placeholder: e.g. abc123…
+    validations:
+      required: true
+
+  - type: input
+    id: ethereum_wallet_address
+    attributes:
+      label: Ethereum wallet address
+      description: Must match the Ethereum address you entered in Typeform. This is the address that will receive the USDT payout.
+      placeholder: "0x…"
     validations:
       required: true

@@ -79,6 +79,20 @@ The following policies apply to **all** prizes unless a specific prize states ot
 
 **Demo requirements.** Every submission that requires a demo must include a narrated video walkthrough in which the builder explains what they built and why, walks through the architecture and key implementation decisions, and demonstrates the full end-to-end flow. A silent screencast without explanation is not sufficient. Prize-specific demo content is listed in each prize's **Submission Requirements**.
 
+## Claiming payment
+
+Prize payouts are handled after a winning solution is accepted and **merged**. Do not open a payment claim until your solution pull request has been merged into `solutions/` of this repository.
+
+**Flow overview**
+
+1. Your winning solution is merged.
+2. You submit the payment claim through GitHub using the **[Lambda Prize payment issue template](https://github.com/logos-co/lambda-prize/issues/new?template=lambda-prize-claim.yml)**. That template links to the claim workflow and tells you what to provide.
+3. The team verifies your claim and processes payment (prizes are paid in **USDT** on Ethereum).
+
+To complete payment, we need your **full legal name**, **country of residence**, and an **Ethereum wallet address**. Your **full legal name** and **country of residence** are required to process the payout and are **not shared with third parties**. Your **Ethereum wallet address** will be **included in your public payment claim** (the GitHub issue), so anyone can see it.
+
+If **privacy** is a concern, we recommend using a **single-use Ethereum address** for this payout.
+
 ## Terms & Conditions
 
 All participants are bound by the [Terms & Conditions](TERMS.md). Key points:
